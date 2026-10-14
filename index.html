@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEV | Academic Project Page</title>
+    <meta
+      name="description"
+      content="MEV: A Multi-Event Video Dataset for Long-Take Generation with temporally grounded event boundaries, hierarchical captions, camera-aware annotations, and generation-oriented quality scores."
+    />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/png" href="./fig/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script>
+      (function () {
+        try {
+          var storedTheme = localStorage.getItem("mev-theme");
+          document.documentElement.dataset.theme = storedTheme === "night" ? "night" : "day";
+        } catch (error) {
+          document.documentElement.dataset.theme = "day";
+        }
+      })();
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <main id="top">
+        <section class="hero section">
+          <div class="container">
+            <div class="hero-stage reveal">
+              <button
+                class="theme-toggle hero-theme-toggle"
+                type="button"
+                data-theme-toggle
+                aria-label="Switch to night mode"
+                title="Switch theme"
+              >
+                <i class="fas fa-moon" data-theme-icon aria-hidden="true"></i>
+              </button>
+              <div class="hero-content">
+                <p class="hero-badge conference-badge">NeurIPS 2026</p>
+                <div class="hero-logo-frame">
+                  <img class="hero-logo" src="./fig/mev.png" alt="MEV logo" width="854" height="570" />
+                </div>
+                <h1><span>MEV: A Multi-Event Video Dataset</span> <span>for Long-Take Generation</span></h1>
+                <div class="hero-authors" aria-label="Authors">
+                  <span>Peiyuan Zhu<sup>1</sup></span>
+                  <span>Shaoan Xie<sup>2</sup></span>
+                  <span>Yifan Shen<sup>1</sup></span>
+                  <span>Wen Tian<sup>2</sup></span>
+                  <span>Zijian Li<sup>1,2</sup></span>
+                  <span>Guangyi Chen<sup>1,2*</sup></span>
+                  <span>Kun Zhang<sup>2,1</sup></span>
+                </div>
+                <div class="hero-affiliations" aria-label="Affiliations">
+                  <span><sup>1</sup> Mohamed bin Zayed University of AI</span>
+                  <span><sup>2</sup> Carnegie Mellon University</span>
+                  <span><sup>*</sup> Corresponding author</span>
+                </div>
+                <p class="hero-summary">
+                  <span>Long-take videos with precise event boundaries and hierarchical captions,</span>
+                  <span>camera-aware descriptions, and generation-oriented quality scores.</span>
+                </p>
+                <div class="hero-actions">
+                  <a class="button button-primary hero-link" href="" aria-disabled="true">
+                    <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                    <span>Paper</span>
+                  </a>
+                  <a class="button button-primary hero-link" href="" aria-disabled="true">
+                    <i class="fas fa-database" aria-hidden="true"></i>
+                    <span>Data</span>
+                  </a>
+                  <a class="button button-primary hero-link" href="" aria-disabled="true">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                    <span>Code</span>
+                  </a>
+                  <a class="button button-primary hero-link" href="#citation">
+                    <span class="bibtex-icon" aria-hidden="true">{ }</span>
+                    <span>BibTeX</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <div class="tldr-card reveal">
+              <p class="section-kicker">TL;DR</p>
+              <p>
+                Existing video-text datasets often provide short clips or coarse captions,
+                which weakens supervision for long-take temporal structure. MEV instead
+                decomposes real-world videos into reproducible atomic events with explicit
+                boundaries, hierarchical captions, camera-aware event descriptions, and
+                quality profiling. This makes temporally localized conditioning easier to
+                study and improves multi-event long-video adaptation in downstream
+                generation experiments.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="project-video" class="section project-video-section" aria-label="MEV project video">
+          <div class="container">
+            <div class="project-video-card">
+              <video
+                controls
+                playsinline
+                preload="none"
+                width="1920"
+                height="1080"
+                poster="./assets/posters/project-film.jpg?v=21"
+                aria-label="MEV project introduction"
+              >
+                <source src="./video/film/mev-academic-film.mp4?v=21" type="video/mp4" />
+                Your browser does not support embedded video.
+                <a href="./video/film/mev-academic-film.mp4?v=21">Download the project video</a>.
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section id="overview" class="section band">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Dataset Overview</p>
+              <h2>Designed around temporal structure rather than clip-level slogans</h2>
+              <p class="section-subtitle">
+                MEV pairs long-take source videos with event boundaries, hierarchical
+                captions, camera motion, semantic tags, and quality scores.
+              </p>
+            </div>
+
+            <figure class="overview-main-figure reveal">
+              <picture>
+                <source data-theme-source="night" media="(max-width: 0px)" srcset="./assets/generated/overview-night.png" />
+                <img
+                  src="./fig/mev-opa100-web.png"
+                  alt="MEV overview figure showing event-level captions and global video annotations"
+                  width="9877"
+                  height="4467"
+                />
+              </picture>
+            </figure>
+
+            <div class="stats-grid">
+              <article class="stat-card reveal">
+                <span class="stat-value">227K</span>
+                <span class="stat-label">raw candidate clips from MixKit and YouTube</span>
+              </article>
+              <article class="stat-card reveal">
+                <span class="stat-value">720p-4K</span>
+                <span class="stat-label">source quality range used during collection</span>
+              </article>
+              <article class="stat-card reveal">
+                <span class="stat-value">8,016 / 25,262</span>
+                <span class="stat-label">long-take videos and event-level video segments</span>
+              </article>
+              <article class="stat-card reveal">
+                <span class="stat-value">2-17</span>
+                <span class="stat-label">events per retained multi-event video</span>
+              </article>
+              <article class="stat-card reveal">
+                <span class="stat-value">20 / 80 / 200</span>
+                <span class="stat-label">approximate word counts for short, middle, and long captions</span>
+              </article>
+              <article class="stat-card reveal">
+                <span class="stat-value">15</span>
+                <span class="stat-label">camera motion labels</span>
+              </article>
+            </div>
+
+            <div class="overview-grid">
+              <article class="overview-card reveal">
+                <p class="card-kicker">What MEV Provides</p>
+                <h3>Dataset assets organized around a global-event hierarchy</h3>
+                <ul>
+                  <li>
+                    Eight global structured fields: background, theme, style, shot type,
+                    camera movement, lighting, atmosphere, and subject profile.
+                  </li>
+                  <li>
+                    Multi-granular global summaries designed for prompt compactness and
+                    descriptive richness.
+                  </li>
+                  <li>
+                    Event-local timestamps, event captions, camera motion labels, motion
+                    descriptions, and semantic attributes.
+                  </li>
+                  <li>
+                    VBench-based quality scores at global and event levels for dataset
+                    analysis and subset curation.
+                  </li>
+                </ul>
+              </article>
+
+              <article class="overview-card reveal">
+                <p class="card-kicker">Why It Matters</p>
+                <h3>Temporal grounding is treated as first-class supervision</h3>
+                <ul>
+                  <li>
+                    Process-driven event units reduce the ambiguity introduced by coarse
+                    whole-video captions.
+                  </li>
+                  <li>
+                    Camera changes are annotated per event instead of being left implicit in
+                    free-form text.
+                  </li>
+                  <li>
+                    Appearance, disappearance, occlusion, lighting change, animal, cooking,
+                    and related attributes enable targeted subset construction.
+                  </li>
+                  <li>
+                    The same annotation structure supports generation, retrieval, and
+                    structured video understanding analyses.
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="pipeline" class="section">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Pipeline</p>
+              <h2>Four stages from raw footage to temporally grounded supervision</h2>
+              <p class="section-subtitle">
+                A 227K-video candidate pool is filtered into 8,016 long-take videos
+                and 25,262 event segments with reproducible temporal boundaries.
+              </p>
+            </div>
+
+            <div class="pipeline-grid">
+              <article class="pipeline-card reveal">
+                <span class="step-number">01</span>
+                <h3>Source Collection</h3>
+                <p>
+                  The raw pool prioritizes real-world long takes with evolving activities,
+                  stable imaging quality, meaningful camera motion, and diverse subjects,
+                  including animals and nature scenes.
+                </p>
+              </article>
+              <article class="pipeline-card reveal">
+                <span class="step-number">02</span>
+                <h3>Statistical and Model Filtering</h3>
+                <p>
+                  The curation stack removes overlays, borders, exposure failures, color
+                  collapse, shot transitions, trivial motion patterns, and videos that do
+                  not fit MEV's multi-event setting.
+                </p>
+              </article>
+              <article class="pipeline-card reveal">
+                <span class="step-number">03</span>
+                <h3>Rule-Guided Event Segmentation</h3>
+                <p>
+                  Events are defined as action units centered on a shared micro-intent and
+                  interaction object, with separability and reproducibility enforced during
+                  manual annotation.
+                </p>
+              </article>
+              <article class="pipeline-card reveal">
+                <span class="step-number">04</span>
+                <h3>Comprehensive Annotation</h3>
+                <p>
+                  Each retained video receives global fields, caption hierarchies, event
+                  timestamps, camera descriptions, semantic attributes, and quality scores
+                  for downstream research use.
+                </p>
+              </article>
+            </div>
+
+            <div class="protocol-grid">
+              <article class="protocol-card reveal">
+                <h3>Boundary Agreement</h3>
+                <p>
+                  Temporal boundaries are accepted when at least two of three annotators
+                  agree within a 0.5 second tolerance window.
+                </p>
+              </article>
+              <article class="protocol-card reveal">
+                <h3>Human and Model Triage</h3>
+                <p>
+                  Annotators review 52.9% of the curated pool, while an event-aware
+                  Qwen3-VL-32B model predicts boundaries for the remaining 47.1%, followed
+                  by manual verification.
+                </p>
+              </article>
+              <article class="protocol-card reveal">
+                <h3>Continuity Rule</h3>
+                <p>
+                  Closed-loop sub-actions are merged when no stable pause or reproducible
+                  procedural cut point exists.
+                </p>
+              </article>
+              <article class="protocol-card reveal">
+                <h3>Incidental Motion Rule</h3>
+                <p>
+                  Auxiliary motions are kept inside the primary event unless they are
+                  compositionally emphasized as the main action.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="annotation" class="section band">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Annotation Taxonomy</p>
+              <h2>A schema built for controllable generation and structured analysis</h2>
+              <p class="section-subtitle">
+                Each record combines video-level scene context with event timestamps,
+                captions, camera labels, semantic attributes, and VBench quality scores.
+              </p>
+            </div>
+
+            <div class="annotation-layout">
+              <div class="table-card reveal">
+                <table class="summary-table">
+                  <thead>
+                    <tr>
+                      <th>Level</th>
+                      <th>Contents</th>
+                      <th>Research Use</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Global fields</td>
+                      <td>
+                        Background, theme, style, shot type, camera movement, lighting,
+                        atmosphere, subject profile
+                      </td>
+                      <td>Whole-video semantics and controllable prompting</td>
+                    </tr>
+                    <tr>
+                      <td>Global summaries</td>
+                      <td>Short, middle, and long captions</td>
+                      <td>Prompt granularity control and retrieval evaluation</td>
+                    </tr>
+                    <tr>
+                      <td>Event descriptors</td>
+                      <td>
+                        Start and end timestamps, event caption, camera label, camera
+                        motion description
+                      </td>
+                      <td>Temporally localized conditioning and event reasoning</td>
+                    </tr>
+                    <tr>
+                      <td>Semantic attributes</td>
+                      <td>
+                        Appearance, disappearance, multi-person, occlusion, lighting
+                        change, animal, cooking
+                      </td>
+                      <td>Subset curation and challenge-focused analysis</td>
+                    </tr>
+                    <tr>
+                      <td>Quality profile</td>
+                      <td>
+                        Temporal flickering, subject consistency, background consistency,
+                        aesthetic quality, imaging quality, motion smoothness
+                      </td>
+                      <td>Quality-aware filtering and benchmark diagnostics</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <article class="schema-card reveal">
+                <p class="card-kicker">Schema Sketch</p>
+                <h3>A representative record layout</h3>
+                <pre><code>{
+  "global": {
+    "background": "...",
+    "theme": "...",
+    "style": "...",
+    "shot_type": "...",
+    "camera_movement": "...",
+    "lighting": "...",
+    "atmosphere": "...",
+    "subject_profile": "...",
+    "captions": {
+      "short": "...",
+      "middle": "...",
+      "long": "..."
+    }
+  },
+  "events": [
+    {
+      "start": 0.0,
+      "end": 4.2,
+      "caption": "...",
+      "camera_labels": ["pan-right"],
+      "camera_description": "...",
+      "attributes": {
+        "appearance": false,
+        "occlusion": true,
+        "cooking": false
+      }
+    }
+  ],
+  "quality": {
+    "subject_consistency": 0.0,
+    "background_consistency": 0.0,
+    "motion_smoothness": 0.0
+  }
+}</code></pre>
+              </article>
+            </div>
+
+          </div>
+        </section>
+
+        <section id="statistics" class="section">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Statistics and Analysis</p>
+              <h2>Multiple views of temporal, linguistic, and camera structure</h2>
+              <p class="section-subtitle">
+                Duration, event-count, caption-length, camera-motion, and semantic-attribute
+                distributions expose both structure and diversity in MEV.
+              </p>
+            </div>
+
+            <div class="analysis-grid">
+              <figure class="wide-figure reveal">
+                <img
+                  src="./assets/generated/stats2-web.jpg"
+                  alt="Statistical analysis figure for the MEV dataset"
+                />
+                <figcaption>
+                  Statistical distributions of MEV from temporal, caption, camera, and
+                  semantic perspectives.
+                </figcaption>
+              </figure>
+
+              <article class="analysis-card reveal">
+                <p class="card-kicker">Observed Patterns</p>
+                <h3>What the statistics emphasize</h3>
+                <ul class="analysis-points">
+                  <li>Covered durations cluster around tens of seconds while keeping a long tail.</li>
+                  <li>Total covered duration and event count are related but remain diverse.</li>
+                  <li>Non-static camera motion is profiled explicitly rather than hidden in captions.</li>
+                  <li>Short, middle, and long captions show clear length separation.</li>
+                  <li>Appearance and disappearance attributes expose event-local transition-heavy subsets.</li>
+                  <li>Word distributions confirm that captions are action-centered rather than purely scenic.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="experiments" class="section band">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Experiments</p>
+              <h2>MEV is evaluated as both data and supervision</h2>
+              <p class="section-subtitle">
+                MEV-Wan is measured with event-centric MEV-Eval scores and generic
+                VBench quality metrics against Wan2.1-1.3B, LongLive, and Ultra-Wan.
+              </p>
+            </div>
+
+            <div class="experiment-results-grid">
+              <article class="experiment-card result-table-card reveal">
+                <div class="result-table-head">
+                  <div>
+                    <p class="card-kicker">MEV-Eval</p>
+                    <h3>Event-centric generation scores</h3>
+                  </div>
+                  <p>
+                    EEA, EOA, TGA, and BTC evaluate execution, ordering, temporal
+                    grounding, and transition coherence.
+                  </p>
+                </div>
+                <div class="table-wrap">
+                  <table class="metrics-table">
+                    <thead>
+                      <tr>
+                        <th>Method</th>
+                        <th>EEA</th>
+                        <th>EOA</th>
+                        <th>TGA</th>
+                        <th>BTC</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Wan2.1-1.3B</td>
+                        <td>0.42</td>
+                        <td>0.20</td>
+                        <td>0.33</td>
+                        <td>0.41</td>
+                      </tr>
+                      <tr>
+                        <td>LongLive</td>
+                        <td>0.47</td>
+                        <td>0.39</td>
+                        <td>0.48</td>
+                        <td>0.58</td>
+                      </tr>
+                      <tr>
+                        <td>Ultra-Wan</td>
+                        <td>0.46</td>
+                        <td>0.33</td>
+                        <td>0.42</td>
+                        <td>0.50</td>
+                      </tr>
+                      <tr class="row-highlight">
+                        <td>MEV-Wan</td>
+                        <td>0.61</td>
+                        <td>0.45</td>
+                        <td>0.60</td>
+                        <td>0.64</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+
+              <article class="experiment-card result-table-card reveal">
+                <div class="result-table-head">
+                  <div>
+                    <p class="card-kicker">VBench</p>
+                    <h3>Generic video quality scores</h3>
+                  </div>
+                  <p>Average over five random 128-prompt draws from the MEV test set.</p>
+                </div>
+                <div class="table-wrap">
+                  <table class="metrics-table">
+                    <thead>
+                      <tr>
+                        <th>Method</th>
+                        <th>Subj.</th>
+                        <th>Back.</th>
+                        <th>Flick.</th>
+                        <th>Smooth.</th>
+                        <th>Aesth.</th>
+                        <th>Image</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Wan2.1-1.3B</td>
+                        <td>0.954</td>
+                        <td>0.949</td>
+                        <td>0.989</td>
+                        <td>0.991</td>
+                        <td>0.585</td>
+                        <td>61.674</td>
+                      </tr>
+                      <tr>
+                        <td>LongLive</td>
+                        <td>0.949</td>
+                        <td>0.950</td>
+                        <td>0.986</td>
+                        <td>0.990</td>
+                        <td>0.504</td>
+                        <td>61.953</td>
+                      </tr>
+                      <tr>
+                        <td>Ultra-Wan</td>
+                        <td>0.936</td>
+                        <td>0.956</td>
+                        <td>0.990</td>
+                        <td>0.987</td>
+                        <td>0.557</td>
+                        <td>63.328</td>
+                      </tr>
+                      <tr class="row-highlight">
+                        <td>MEV-Wan</td>
+                        <td>0.960</td>
+                        <td>0.952</td>
+                        <td>0.990</td>
+                        <td>0.991</td>
+                        <td>0.590</td>
+                        <td>64.924</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </article>
+            </div>
+
+            <div class="result-grid">
+              <figure class="result-card reveal">
+                <img
+                  src="./assets/generated/gen_obs-web.jpg"
+                  alt="Comparison of caption granularity in video generation"
+                />
+                <figcaption>
+                  Higher caption granularity improves alignment with ground-truth event
+                  progression, while current generators miss hard local events.
+                </figcaption>
+              </figure>
+              <figure class="result-card reveal">
+                <img
+                  src="./assets/generated/ex_gen-web.jpg"
+                  alt="Qualitative comparison of multi-event generation results"
+                />
+                <figcaption>
+                  MEV-Wan shows smoother transitions and stronger temporal consistency than
+                  Wan2.1, LongLive, and the Ultra-Wan baseline.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="showcase" class="section">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Showcase</p>
+              <h2>Data Showcase</h2>
+              <p class="section-subtitle">
+                Long-take examples pair playback with event captions, camera motion,
+                semantic attributes, and quality scores.
+              </p>
+            </div>
+
+            <div id="showcase-rows" class="showcase-rows"></div>
+          </div>
+        </section>
+
+        <section id="citation" class="section band">
+          <div class="container">
+            <div class="section-head reveal">
+              <p class="section-kicker">Citation</p>
+            </div>
+
+            <div class="citation-card reveal">
+              <div class="citation-toolbar">
+                <span>BibTeX</span>
+                <button class="copy-button" type="button" data-copy-citation>
+                  Copy
+                </button>
+              </div>
+              <pre id="citation-code"><code>@misc{mev2026,
+  title = {MEV: A Multi-Event Video Dataset for Long-Take Generation},
+  author = {Zhu, Peiyuan and Xie, Shaoan and Shen, Yifan and Tian, Wen and
+            Li, Zijian and Chen, Guangyi and Zhang, Kun},
+  year  = {2026},
+  note  = {NeurIPS 2026 Evaluations and Datasets Track submission}
+}</code></pre>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./meta/mev-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
