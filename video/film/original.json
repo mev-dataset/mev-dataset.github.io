@@ -1,0 +1,10 @@
+{
+  "version": "v29",
+  "filename": "MEV_academic_film_v29_1080p60.mp4",
+  "size": 117272902,
+  "sha256": "bf3deb141f3fe3950869b3be4efb0b2bc45aa5820c4ccbacdff28d1b79267780",
+  "url": "https://github.com/mev-dataset/mev-dataset.github.io/releases/download/video-v29/MEV_academic_film_v29_1080p60.mp4",
+  "release_url": "https://github.com/mev-dataset/mev-dataset.github.io/releases/tag/video-v29",
+  "asset_id": 641779652,
+  "processing": "Original supplied file; no transcoding, compression, or remuxing."
+}
