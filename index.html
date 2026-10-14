@@ -167,18 +167,6 @@
                 <span class="stat-value">8,016 / 25,262</span>
                 <span class="stat-label">long-take videos and event-level video segments</span>
               </article>
-              <article class="stat-card reveal">
-                <span class="stat-value">2-17</span>
-                <span class="stat-label">events per retained multi-event video</span>
-              </article>
-              <article class="stat-card reveal">
-                <span class="stat-value">20 / 80 / 200</span>
-                <span class="stat-label">approximate word counts for short, middle, and long captions</span>
-              </article>
-              <article class="stat-card reveal">
-                <span class="stat-value">15</span>
-                <span class="stat-label">camera motion labels</span>
-              </article>
             </div>
 
             <div class="overview-grid">
@@ -231,87 +219,18 @@
           </div>
         </section>
 
-        <section id="pipeline" class="section">
+        <section id="showcase" class="section">
           <div class="container">
             <div class="section-head reveal">
-              <p class="section-kicker">Pipeline</p>
-              <h2>Four stages from raw footage to temporally grounded supervision</h2>
+              <p class="section-kicker">Showcase</p>
+              <h2>Data Showcase</h2>
               <p class="section-subtitle">
-                A 227K-video candidate pool is filtered into 8,016 long-take videos
-                and 25,262 event segments with reproducible temporal boundaries.
+                Long-take examples pair playback with event captions, camera motion,
+                semantic attributes, and quality scores.
               </p>
             </div>
 
-            <div class="pipeline-grid">
-              <article class="pipeline-card reveal">
-                <span class="step-number">01</span>
-                <h3>Source Collection</h3>
-                <p>
-                  The raw pool prioritizes real-world long takes with evolving activities,
-                  stable imaging quality, meaningful camera motion, and diverse subjects,
-                  including animals and nature scenes.
-                </p>
-              </article>
-              <article class="pipeline-card reveal">
-                <span class="step-number">02</span>
-                <h3>Statistical and Model Filtering</h3>
-                <p>
-                  The curation stack removes overlays, borders, exposure failures, color
-                  collapse, shot transitions, trivial motion patterns, and videos that do
-                  not fit MEV's multi-event setting.
-                </p>
-              </article>
-              <article class="pipeline-card reveal">
-                <span class="step-number">03</span>
-                <h3>Rule-Guided Event Segmentation</h3>
-                <p>
-                  Events are defined as action units centered on a shared micro-intent and
-                  interaction object, with separability and reproducibility enforced during
-                  manual annotation.
-                </p>
-              </article>
-              <article class="pipeline-card reveal">
-                <span class="step-number">04</span>
-                <h3>Comprehensive Annotation</h3>
-                <p>
-                  Each retained video receives global fields, caption hierarchies, event
-                  timestamps, camera descriptions, semantic attributes, and quality scores
-                  for downstream research use.
-                </p>
-              </article>
-            </div>
-
-            <div class="protocol-grid">
-              <article class="protocol-card reveal">
-                <h3>Boundary Agreement</h3>
-                <p>
-                  Temporal boundaries are accepted when at least two of three annotators
-                  agree within a 0.5 second tolerance window.
-                </p>
-              </article>
-              <article class="protocol-card reveal">
-                <h3>Human and Model Triage</h3>
-                <p>
-                  Annotators review 52.9% of the curated pool, while an event-aware
-                  Qwen3-VL-32B model predicts boundaries for the remaining 47.1%, followed
-                  by manual verification.
-                </p>
-              </article>
-              <article class="protocol-card reveal">
-                <h3>Continuity Rule</h3>
-                <p>
-                  Closed-loop sub-actions are merged when no stable pause or reproducible
-                  procedural cut point exists.
-                </p>
-              </article>
-              <article class="protocol-card reveal">
-                <h3>Incidental Motion Rule</h3>
-                <p>
-                  Auxiliary motions are kept inside the primary event unless they are
-                  compositionally emphasized as the main action.
-                </p>
-              </article>
-            </div>
+            <div id="showcase-rows" class="showcase-rows"></div>
           </div>
         </section>
 
@@ -616,21 +535,6 @@
                 </figcaption>
               </figure>
             </div>
-          </div>
-        </section>
-
-        <section id="showcase" class="section">
-          <div class="container">
-            <div class="section-head reveal">
-              <p class="section-kicker">Showcase</p>
-              <h2>Data Showcase</h2>
-              <p class="section-subtitle">
-                Long-take examples pair playback with event captions, camera motion,
-                semantic attributes, and quality scores.
-              </p>
-            </div>
-
-            <div id="showcase-rows" class="showcase-rows"></div>
           </div>
         </section>
 
