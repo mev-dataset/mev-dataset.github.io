@@ -168,54 +168,6 @@
                 <span class="stat-label">long-take videos and event-level video segments</span>
               </article>
             </div>
-
-            <div class="overview-grid">
-              <article class="overview-card reveal">
-                <p class="card-kicker">What MEV Provides</p>
-                <h3>Dataset assets organized around a global-event hierarchy</h3>
-                <ul>
-                  <li>
-                    Eight global structured fields: background, theme, style, shot type,
-                    camera movement, lighting, atmosphere, and subject profile.
-                  </li>
-                  <li>
-                    Multi-granular global summaries designed for prompt compactness and
-                    descriptive richness.
-                  </li>
-                  <li>
-                    Event-local timestamps, event captions, camera motion labels, motion
-                    descriptions, and semantic attributes.
-                  </li>
-                  <li>
-                    VBench-based quality scores at global and event levels for dataset
-                    analysis and subset curation.
-                  </li>
-                </ul>
-              </article>
-
-              <article class="overview-card reveal">
-                <p class="card-kicker">Why It Matters</p>
-                <h3>Temporal grounding is treated as first-class supervision</h3>
-                <ul>
-                  <li>
-                    Process-driven event units reduce the ambiguity introduced by coarse
-                    whole-video captions.
-                  </li>
-                  <li>
-                    Camera changes are annotated per event instead of being left implicit in
-                    free-form text.
-                  </li>
-                  <li>
-                    Appearance, disappearance, occlusion, lighting change, animal, cooking,
-                    and related attributes enable targeted subset construction.
-                  </li>
-                  <li>
-                    The same annotation structure supports generation, retrieval, and
-                    structured video understanding analyses.
-                  </li>
-                </ul>
-              </article>
-            </div>
           </div>
         </section>
 
@@ -288,7 +240,8 @@
                     <tr>
                       <td>Quality profile</td>
                       <td>
-                        Temporal flickering, subject consistency, background consistency,
+                        Global- and event-level VBench scores: temporal flickering,
+                        subject consistency, background consistency,
                         aesthetic quality, imaging quality, motion smoothness
                       </td>
                       <td>Quality-aware filtering and benchmark diagnostics</td>

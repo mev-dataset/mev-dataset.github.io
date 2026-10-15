@@ -224,7 +224,6 @@ button {
 }
 
 .hero-grid,
-.overview-grid,
 .annotation-layout,
 .analysis-grid,
 .result-grid {
@@ -240,7 +239,6 @@ button {
 .hero-stage,
 .tldr-card,
 .stat-card,
-.overview-card,
 .pipeline-card,
 .protocol-card,
 .table-card,
@@ -260,7 +258,6 @@ button {
 
 .hero-stage,
 .tldr-card,
-.overview-card,
 .table-card,
 .schema-card,
 .analysis-card,
@@ -498,7 +495,6 @@ h1 {
 
 .hero-summary,
 .section-subtitle,
-.overview-card li,
 .pipeline-card p,
 .protocol-card p,
 .analysis-points li,
@@ -630,7 +626,6 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-  margin-bottom: 1.5rem;
 }
 
 .stat-card {
@@ -652,15 +647,6 @@ h1 {
   line-height: 1.5;
 }
 
-.overview-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.overview-card {
-  padding: 1.8rem;
-}
-
-.overview-card h3,
 .pipeline-card h3,
 .protocol-card h3,
 .schema-card h3,
@@ -670,7 +656,6 @@ h1 {
   font-size: 1.55rem;
 }
 
-.overview-card ul,
 .analysis-points {
   margin: 0;
   padding-left: 1.1rem;
@@ -1519,7 +1504,6 @@ h1 {
     width: min(calc(100% - 1.4rem), var(--content));
   }
 
-  .overview-card,
   .table-card,
   .schema-card,
   .analysis-card,
@@ -1538,7 +1522,6 @@ h1 {
   }
 
   .stats-grid,
-  .overview-grid,
   .pipeline-grid,
   .protocol-grid,
   .figure-grid,
