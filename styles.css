@@ -426,8 +426,8 @@ h1 {
 
 .bibtex-icon {
   font-family: "SFMono-Regular", Consolas, monospace;
-  font-weight: 700;
-  font-size: 1.05em;
+  font-weight: 600;
+  font-size: 0.95rem;
   line-height: 1;
 }
 
