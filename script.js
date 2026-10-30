@@ -242,7 +242,6 @@ const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeIcon = document.querySelector("[data-theme-icon]");
 const themeStorageKey = "mev-theme";
 const metadataPath = "./meta/mev.json?v=20261030-showcase";
-const eventPauseSeconds = 0.8;
 const semanticAttributeFields = [
   { name: "Appearance", key: "has_appearance" },
   { name: "Disappearance", key: "has_disappearance" },
@@ -377,8 +376,6 @@ function createEventMetadata(sequence, videoMetadata) {
   const metadataByFilename = new Map(
     (videoMetadata.events || []).map((event) => [event.filename, event])
   );
-  let timelineCursor = 0;
-
   return sequence.items.map((item, index) => {
     const eventMetadata = metadataByFilename.get(getFileName(item.video)) || videoMetadata.events[index];
     const span = eventMetadata
@@ -390,12 +387,6 @@ function createEventMetadata(sequence, videoMetadata) {
           duration: Math.max(Number(eventMetadata.duration) || 0, 0.1)
         }
       : parseSpan(item.span);
-    const pauseAfter = index < sequence.items.length - 1 ? eventPauseSeconds : 0;
-    const outputStart = timelineCursor;
-    const outputEnd = outputStart + span.duration;
-    const outputHoldEnd = outputEnd + pauseAfter;
-    timelineCursor = outputHoldEnd;
-
     return {
       ...item,
       eventNumber: index + 1,
@@ -404,9 +395,6 @@ function createEventMetadata(sequence, videoMetadata) {
       beginSeconds: span.beginSeconds,
       endSeconds: span.endSeconds,
       duration: span.duration,
-      outputStart,
-      outputEnd,
-      outputHoldEnd,
       caption: eventMetadata?.caption || "",
       cameraMotion: getCameraMotionLabel(eventMetadata),
       cameraMotionDescription: getCameraMotionDescription(eventMetadata),
@@ -430,7 +418,7 @@ function createShowcaseRuntimeSequences(metadataByUuid) {
         ...sequence,
         globalCaption,
         globalCaptionTooltip: `Global middle caption: ${globalCaption}`,
-        showcaseVideo: sequence.showcaseVideo || `./video/showcase/${sequence.sourceId}.mp4`,
+        showcaseVideo: sequence.showcaseVideo || `./video/showcase/${sequence.sourceId}.mp4?v=20261030-continuous`,
         events: createEventMetadata(sequence, videoMetadata)
       };
     })
@@ -659,7 +647,7 @@ function createShowcaseRow(sequence, sequenceIndex) {
 function getActiveEventIndex(events, currentTime) {
   // Native video looping resets currentTime. Keep a rounded final frame on
   // the final event even when media duration slightly exceeds the annotations.
-  const activeIndex = events.findIndex((event) => currentTime < event.outputHoldEnd);
+  const activeIndex = events.findIndex((event) => currentTime < event.endSeconds);
   return activeIndex === -1 ? events.length - 1 : activeIndex;
 }
 
@@ -697,7 +685,7 @@ function setupShowcasePlayback(showcaseRuntimeSequences) {
     row.querySelectorAll("[data-event-index]").forEach((button) => {
       button.addEventListener("click", () => {
         const event = sequence.events[Number(button.dataset.eventIndex)];
-        video.currentTime = event.outputStart + 0.04;
+        video.currentTime = event.beginSeconds + 0.04;
         row.dataset.userPaused = "false";
         video.play().catch(() => {});
       });

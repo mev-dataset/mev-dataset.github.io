@@ -1,0 +1,58 @@
+[
+  {
+    "uuid": "d23ace12-956d-4317-bae5-3e17d1fb9222",
+    "raw_720p_shard_path": "raw/720p/raw-000008.tar",
+    "raw_720p_tar_member": "d23ace12-956d-4317-bae5-3e17d1fb9222.mp4",
+    "raw_720p_sha256": "f861fe7e99d81aa82d8ebd7643f7242d2621d7664cfcff71cf9076c12ee068f1",
+    "raw_720p_bytes": 5771683
+  },
+  {
+    "uuid": "e68f0ab6-6af9-42ac-8460-0cb67cf8509d",
+    "raw_720p_shard_path": "raw/720p/raw-000008.tar",
+    "raw_720p_tar_member": "e68f0ab6-6af9-42ac-8460-0cb67cf8509d.mp4",
+    "raw_720p_sha256": "d15c4123481523b87f28b3ae0e5bedb4bfce6ad27597d595da61cacab932837c",
+    "raw_720p_bytes": 4898856
+  },
+  {
+    "uuid": "011a85e1-3c11-4c14-87ed-f53aefea8ee9",
+    "raw_720p_shard_path": "raw/720p/raw-000000.tar",
+    "raw_720p_tar_member": "011a85e1-3c11-4c14-87ed-f53aefea8ee9.mp4",
+    "raw_720p_sha256": "eb83d8dcdd22f7f5caa446e07a0d785eabd65ad2f11e7e10fe0b7c7760f3e95e",
+    "raw_720p_bytes": 5557467
+  },
+  {
+    "uuid": "349fafaa-7f2c-463c-896a-e50202955dad",
+    "raw_720p_shard_path": "raw/720p/raw-000002.tar",
+    "raw_720p_tar_member": "349fafaa-7f2c-463c-896a-e50202955dad.mp4",
+    "raw_720p_sha256": "3f4c7ed83306e48a310469ac4278a510f45c721591fe7a012702f2485143ea48",
+    "raw_720p_bytes": 2431634
+  },
+  {
+    "uuid": "0709bd04-ed06-4d02-a720-f035c8414058",
+    "raw_720p_shard_path": "raw/720p/raw-000000.tar",
+    "raw_720p_tar_member": "0709bd04-ed06-4d02-a720-f035c8414058.mp4",
+    "raw_720p_sha256": "7d18af354a3b77f8432a48c4eaff4823b12efe4fd64faa437c7bff076520281d",
+    "raw_720p_bytes": 3747761
+  },
+  {
+    "uuid": "1c88e6a5-4b7e-4ebe-aa3f-cfd5cf3a4d60",
+    "raw_720p_shard_path": "raw/720p/raw-000001.tar",
+    "raw_720p_tar_member": "1c88e6a5-4b7e-4ebe-aa3f-cfd5cf3a4d60.mp4",
+    "raw_720p_sha256": "59b024f33e8836b7d22cc72a017b137521b3865f9ecccc42249ba00f6e9fdef1",
+    "raw_720p_bytes": 5912060
+  },
+  {
+    "uuid": "24d1d95d-5ada-4035-817e-6787abc06ef6",
+    "raw_720p_shard_path": "raw/720p/raw-000001.tar",
+    "raw_720p_tar_member": "24d1d95d-5ada-4035-817e-6787abc06ef6.mp4",
+    "raw_720p_sha256": "06771f78a9337ccdf045a4649e5489c55d55d2acf5f65f6513427767c87d0cb6",
+    "raw_720p_bytes": 2820473
+  },
+  {
+    "uuid": "7bee8477-87ab-4604-8b74-309432a8c35b",
+    "raw_720p_shard_path": "raw/720p/raw-000005.tar",
+    "raw_720p_tar_member": "7bee8477-87ab-4604-8b74-309432a8c35b.mp4",
+    "raw_720p_sha256": "c8b86613d968e6c2206c798efa6d11996ef9533b0672cc79f45f3fb7e5e87972",
+    "raw_720p_bytes": 6204106
+  }
+]
