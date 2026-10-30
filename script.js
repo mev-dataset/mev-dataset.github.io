@@ -145,26 +145,25 @@ const showcaseSequences = [
     title: "Nature Sequence",
     sourceId: "011a85e1-3c11-4c14-87ed-f53aefea8ee9",
     note: "Same source clip segmented into 3 temporally ordered events.",
-    poster: "./assets/posters/nature.jpg",
-    showcaseVideo: "./video/showcase/mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k.mp4",
+    poster: "./assets/posters/nature.jpg?v=20261030-showcase",
     items: [
       {
         label: "Event 1",
         span: "00:00.000 - 00:01.794",
         video:
-          "./video/nature/mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k-00.00.00.000-00.00.01.744-seg1.mp4"
+          "./video/nature/011a85e1-3c11-4c14-87ed-f53aefea8ee9-00.00.00.000-00.00.01.794-seg1.mp4"
       },
       {
         label: "Event 2",
         span: "00:01.794 - 00:13.264",
         video:
-          "./video/nature/mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k-00.00.01.744-00.00.11.357-seg2.mp4"
+          "./video/nature/011a85e1-3c11-4c14-87ed-f53aefea8ee9-00.00.01.794-00.00.13.264-seg2.mp4"
       },
       {
         label: "Event 3",
-        span: "00:13.264 - 00:25.610",
+        span: "00:13.264 - 00:18.310",
         video:
-          "./video/nature/mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k-00.00.11.357-00.00.18.310-seg3.mp4"
+          "./video/nature/011a85e1-3c11-4c14-87ed-f53aefea8ee9-00.00.13.264-00.00.18.310-seg3.mp4"
       }
     ]
   },
@@ -242,16 +241,19 @@ const citationCode = document.querySelector("#citation-code");
 const themeToggle = document.querySelector("[data-theme-toggle]");
 const themeIcon = document.querySelector("[data-theme-icon]");
 const themeStorageKey = "mev-theme";
-const metadataPath = "./meta/mev.json";
+const metadataPath = "./meta/mev.json?v=20261030-showcase";
 const eventPauseSeconds = 0.8;
 const semanticAttributeFields = [
   { name: "Appearance", key: "has_appearance" },
   { name: "Disappearance", key: "has_disappearance" },
   { name: "Multi-person", key: "is_multi_person" },
-  { name: "Visual occlusion", key: "has_occlusion" },
   { name: "Lighting variation", key: "has_lighting_change" },
   { name: "Animal presence", key: "has_animal" },
-  { name: "Cooking activity", key: "is_cooking" }
+  { name: "Cooking activity", key: "has_cooking" },
+  { name: "Sports activity", key: "has_sports" },
+  { name: "Travel", key: "has_travel" },
+  { name: "Child presence", key: "has_child" },
+  { name: "Environmental change", key: "has_environmental_change" }
 ];
 const qualityScoreFields = [
   { name: "Subject consistency", key: "subject_consistency" },
@@ -356,16 +358,9 @@ function createQualityScores(eventMetadata = {}) {
   }));
 }
 
-const genericCameraMotionLabels = new Set(["motion", "moving", "camera motion"]);
-
 function getCameraMotionLabel(eventMetadata = {}) {
   const label = String(eventMetadata.camera_motion_label || "").trim();
-
-  if (label && !genericCameraMotionLabels.has(label.toLowerCase())) {
-    return label;
-  }
-
-  return "static";
+  return label || (eventMetadata.has_camera_motion ? "Not specified" : "static");
 }
 
 function getCameraMotionDescription(eventMetadata = {}) {
@@ -622,6 +617,7 @@ function renderEventTimeline(events) {
 function createShowcaseRow(sequence, sequenceIndex) {
   const row = document.createElement("article");
   row.className = "showcase-row reveal";
+  row.id = `showcase-${sequence.sourceId}`;
   row.dataset.sequenceIndex = String(sequenceIndex);
   row.dataset.activeEventIndex = "0";
 
@@ -661,9 +657,9 @@ function createShowcaseRow(sequence, sequenceIndex) {
 }
 
 function getActiveEventIndex(events, currentTime) {
-  const totalDuration = events[events.length - 1].outputHoldEnd;
-  const normalizedTime = totalDuration > 0 ? currentTime % totalDuration : currentTime;
-  const activeIndex = events.findIndex((event) => normalizedTime < event.outputHoldEnd);
+  // Native video looping resets currentTime. Keep a rounded final frame on
+  // the final event even when media duration slightly exceeds the annotations.
+  const activeIndex = events.findIndex((event) => currentTime < event.outputHoldEnd);
   return activeIndex === -1 ? events.length - 1 : activeIndex;
 }
 

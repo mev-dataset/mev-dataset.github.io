@@ -231,8 +231,8 @@
                     <tr>
                       <td>Semantic attributes</td>
                       <td>
-                        Appearance, disappearance, multi-person, occlusion, lighting
-                        change, animal, cooking
+                        Appearance, disappearance, multi-person, lighting change,
+                        animal, cooking, sports, travel, child, environmental change
                       </td>
                       <td>Subset curation and challenge-focused analysis</td>
                     </tr>
@@ -253,7 +253,7 @@
                 <p class="card-kicker">Schema Sketch</p>
                 <h3>A representative record layout</h3>
                 <pre><code>{
-  "global": {
+  "global_prompt": {
     "background": "...",
     "theme": "...",
     "style": "...",
@@ -262,27 +262,26 @@
     "lighting": "...",
     "atmosphere": "...",
     "subject_profile": "...",
-    "captions": {
-      "short": "...",
-      "middle": "...",
-      "long": "..."
-    }
+    "short_caption": "...",
+    "middle_caption": "...",
+    "long_caption": "..."
   },
   "events": [
     {
-      "start": 0.0,
-      "end": 4.2,
+      "start_time": 0.0,
+      "end_time": 4.2,
       "caption": "...",
-      "camera_labels": ["pan-right"],
-      "camera_description": "...",
-      "attributes": {
-        "appearance": false,
-        "occlusion": true,
-        "cooking": false
-      }
+      "camera_motion_label": "pan-right",
+      "camera_motion_desc": "...",
+      "focus_shift": null,
+      "has_appearance": false,
+      "has_cooking": false,
+      "has_sports": false,
+      "has_travel": true,
+      "has_child": false
     }
   ],
-  "quality": {
+  "vbench_scores": {
     "subject_consistency": 0.0,
     "background_consistency": 0.0,
     "motion_smoothness": 0.0
@@ -519,7 +518,7 @@
       </main>
     </div>
 
-    <script src="./meta/mev-data.js"></script>
-    <script src="./script.js"></script>
+    <script src="./meta/mev-data.js?v=20261030-showcase"></script>
+    <script src="./script.js?v=20261030-showcase"></script>
   </body>
 </html>

@@ -28,14 +28,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": true,
-          "is_cooking": false,
-          "focus_object": "wooden beam",
+          "has_cooking": false,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -45,7 +43,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9952293048883618,
             "imaging_quality": 0.5878000162564792,
             "aesthetic_quality": 0.54668128490448
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -57,14 +58,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": true,
-          "is_cooking": false,
-          "focus_object": "wooden beam",
+          "has_cooking": false,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -74,7 +73,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9950686221892057,
             "imaging_quality": 0.6363964341178773,
             "aesthetic_quality": 0.5574460029602051
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
@@ -86,14 +88,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": true,
-          "is_cooking": false,
-          "focus_object": "wooden beam",
+          "has_cooking": false,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -103,9 +103,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9953935448890204,
             "imaging_quality": 0.6237942127285875,
             "aesthetic_quality": 0.5387258529663086
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.9091991746012186,
+        "background_consistency": 0.9534340566293352,
+        "temporal_flickering": 0.9889425937889555,
+        "motion_smoothness": 0.9954849375920914,
+        "imaging_quality": 0.6083118132077731,
+        "aesthetic_quality": 0.5517482860271747
+      }
     },
     {
       "uuid": "011a85e1-3c11-4c14-87ed-f53aefea8ee9",
@@ -130,18 +141,16 @@ window.MEV_SHOWCASE_METADATA = {
           "end_time": 1.794,
           "duration": 1.794,
           "caption": "A low-angle, stationary shot captures a sandy beach at sunset, with large, dark rocks in the foreground and waves rolling ashore as the sun glares brightly over the ocean.",
-          "filename": "mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k-00.00.00.000-00.00.01.744-seg1.mp4",
+          "filename": "011a85e1-3c11-4c14-87ed-f53aefea8ee9-00.00.00.000-00.00.01.794-seg1.mp4",
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "beach",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks right, moving slowly along the sandy shoreline and past a large cluster of dark rocks in the foreground.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -151,7 +160,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9956285292730775,
             "imaging_quality": 0.6706843847977488,
             "aesthetic_quality": 0.5231859087944031
-          }
+          },
+          "has_sports": false,
+          "has_travel": true,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -159,18 +171,16 @@ window.MEV_SHOWCASE_METADATA = {
           "end_time": 13.264,
           "duration": 11.47,
           "caption": "The camera moves toward the frame's left, parallel to the shoreline, as waves with white foam wash onto the wet sand, reflecting the bright sun.",
-          "filename": "mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k-00.00.01.744-00.00.11.357-seg2.mp4",
+          "filename": "011a85e1-3c11-4c14-87ed-f53aefea8ee9-00.00.01.794-00.00.13.264-seg2.mp4",
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "waves",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks right and pans left, moving parallel to the shoreline and keeping the waves in view as they crash onto the wet sand.",
           "camera_motion_label": "truck-right, pan-left",
           "vbench_scores": {
@@ -180,26 +190,27 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.99187200432712,
             "imaging_quality": 0.7260231292247772,
             "aesthetic_quality": 0.5353404879570007
-          }
+          },
+          "has_sports": false,
+          "has_travel": true,
+          "has_child": false
         },
         {
           "event_id": 3,
           "start_time": 13.264,
-          "end_time": 25.61,
-          "duration": 12.346,
+          "end_time": 18.31,
+          "duration": 5.046,
           "caption": "The camera continues to pull back and up, revealing a wider view of the rocky coastline with dark, tree-covered hills and a sandy beach as waves crash below.",
-          "filename": "mixkit-beautiful-aerial-shot-of-beach-shore-1085-4k-00.00.11.357-00.00.18.310-seg3.mp4",
+          "filename": "011a85e1-3c11-4c14-87ed-f53aefea8ee9-00.00.13.264-00.00.18.310-seg3.mp4",
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "coastline",
+          "has_cooking": false,
           "camera_motion_desc": "The camera pedestals up and trucks right while panning left, pulling back to reveal a wider view of the dark, tree-covered hills along the rocky coastline.",
           "camera_motion_label": "truck-right, pedestal-up, pan-left",
           "vbench_scores": {
@@ -209,9 +220,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9914501033690081,
             "imaging_quality": 0.7710386244977108,
             "aesthetic_quality": 0.5513516068458557
-          }
+          },
+          "has_sports": false,
+          "has_travel": true,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.8337525576353073,
+        "background_consistency": 0.9327269950413812,
+        "temporal_flickering": 0.9758953172076794,
+        "motion_smoothness": 0.9919908416667392,
+        "imaging_quality": 0.752363989445506,
+        "aesthetic_quality": 0.5609219422916073
+      }
     },
     {
       "uuid": "e68f0ab6-6af9-42ac-8460-0cb67cf8509d",
@@ -240,14 +262,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": false,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "radish",
+          "has_cooking": true,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -257,7 +277,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9952708531808246,
             "imaging_quality": 0.6162476798371002,
             "aesthetic_quality": 0.5507186651229858
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -269,14 +292,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": true,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": true,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": false,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "knife",
+          "has_cooking": true,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -286,7 +307,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9919699474158278,
             "imaging_quality": 0.5830050032017595,
             "aesthetic_quality": 0.54510498046875
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
@@ -298,14 +322,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": false,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "knife",
+          "has_cooking": true,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -315,9 +337,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9951099886701359,
             "imaging_quality": 0.5718933722313414,
             "aesthetic_quality": 0.5360220074653625
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.9390718403789732,
+        "background_consistency": 0.9356732855902777,
+        "temporal_flickering": 0.9876718730121397,
+        "motion_smoothness": 0.9944705226110505,
+        "imaging_quality": 0.6048847867538554,
+        "aesthetic_quality": 0.5608276536353676
+      }
     },
     {
       "uuid": "349fafaa-7f2c-463c-896a-e50202955dad",
@@ -327,7 +360,7 @@ window.MEV_SHOWCASE_METADATA = {
         "theme": "The central theme is street crime and vulnerability. It portrays the sudden and shocking nature of a purse snatching, highlighting the danger of being distracted in public spaces. The video captures the brief, violent encounter and the victim's immediate aftermath of shock and helplessness.",
         "style": "The style is realistic and dramatic, reminiscent of a crime film or a public safety awareness video. The desaturated, cool-toned color grading enhances the serious and tense mood of the scene.",
         "shot_type": "The shot is a medium long shot that captures the full figures of the subjects and their immediate surroundings. This perspective allows the viewer to observe the action and the environment in which it unfolds.",
-        "camera_movement": "The camera maintains a steady truck-right motion across the events, following the woman along the sidewalk through the purse-snatching sequence.",
+        "camera_movement": "The camera maintains a steady truck-right motion, following the woman along the sidewalk through the purse-snatching sequence.",
         "lighting": "The lighting is dim, diffuse, and natural, suggesting an overcast sky or the early evening. The cool, low-light conditions contribute to the somber and slightly menacing atmosphere of the video.",
         "atmosphere": "The atmosphere begins as mundane and unremarkable but abruptly shifts to one of tension, shock, and distress. The initial calm is shattered by the sudden act of violence, leaving a lingering sense of unease and vulnerability.",
         "subject_profile": "A woman is the primary subject, and a man appears briefly to rob her. The woman is an adult with a light skin tone and reddish-brown, shoulder-length hair; she wears a pink blouse, black pants, black platform sneakers, and carries a dark handbag. The man, who appears midway, is an adult dressed entirely in black, including a balaclava that completely conceals his face, a jacket, pants, and sneakers.",
@@ -346,14 +379,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "phone",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks right, following the woman as she walks.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -363,7 +394,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9935006547935408,
             "imaging_quality": 0.6066386540730795,
             "aesthetic_quality": 0.44715946912765503
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -375,14 +409,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": true,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": true,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "handbag",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks right, following the woman as she is attacked from behind.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -392,7 +424,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9910454292772575,
             "imaging_quality": 0.6058681545617446,
             "aesthetic_quality": 0.4780716300010681
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
@@ -404,14 +439,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": true,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks right to follow the woman as she stands up.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -421,7 +454,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9933028257824478,
             "imaging_quality": 0.5887559787647144,
             "aesthetic_quality": 0.43755388259887695
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 4,
@@ -433,14 +469,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "phone",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks slightly right, keeping the woman centered in the frame.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -450,9 +484,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9955255132145451,
             "imaging_quality": 0.6392627334594727,
             "aesthetic_quality": 0.4423384666442871
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.8679141135333659,
+        "background_consistency": 0.8921797196943682,
+        "temporal_flickering": 0.9697877861923813,
+        "motion_smoothness": 0.9931472482489256,
+        "imaging_quality": 0.610678775141148,
+        "aesthetic_quality": 0.4562240058607091
+      }
     },
     {
       "uuid": "0709bd04-ed06-4d02-a720-f035c8414058",
@@ -462,12 +507,12 @@ window.MEV_SHOWCASE_METADATA = {
         "theme": "The video's theme revolves around focused leisure, nostalgia, and a moment of personal escape through retro video gaming. The presence of the classic Nintendo 64 controller evokes a sense of the past, while the subject's concentration highlights the immersive nature of gaming.",
         "style": "The style is cinematic and intimate, characterized by a shallow depth of field and soft, atmospheric lighting. The color palette is warm and moody, contributing to a nostalgic and personal feel.",
         "shot_type": "The video consists of a continuous shot that transitions from a close-up on the subject's hands and the controller to a close-up profile shot of her face.",
-        "camera_movement": "The camera tilts up during the earlier events, moving from the controller and hands toward the woman's face, then remains mostly stable.",
+        "camera_movement": "The camera tilts up, moving from the controller and hands toward the woman's face, then remains mostly stable.",
         "lighting": "The lighting is low-key and atmospheric, using a combination of warm yellow light on the subject's face and cool blue light in the background. This contrast creates visual depth and a moody, relaxed ambiance.",
         "atmosphere": "The atmosphere is calm, focused, and slightly nostalgic. The combination of dim lighting, the subject's quiet concentration, and the retro gaming element creates an intimate and immersive mood.",
-        "subject_profile": "A young woman is the primary subject, shown playing a video game.\n\n1. **A woman**\n   - **What it is**: human.\n   - **Description**: A young adult woman with a light skin tone and long, light brown hair. She is wearing a black long-sleeved top, blue jeans, and several bracelets on her wrists. Throughout the video, her expression is one of intense concentration on the game, and she is seen blowing a bubble with chewing gum.",
-        "middle_caption": "In a dimly lit, atmospheric indoor setting, a young woman with long hair is deeply engaged in playing a retro video game, holding a classic green Nintendo 64 controller. She wears a black long-sleeved top, blue jeans, and multiple bracelets, her expression focused and absorbed. The scene features close-up and medium shots, with a shallow depth of field emphasizing her and the controller against a softly blurred background. The warm and cool lighting creates a moody, nostalgic ambiance, capturing a quiet, personal moment of leisure and concentration.",
+        "subject_profile": "A young woman is the primary subject, shown playing a video game.\n\n1. A woman\n   - What it is: human.\n   - Description: A young adult woman with a light skin tone and long, light brown hair. She is wearing a black long-sleeved top, blue jeans, and several bracelets on her wrists. Throughout the video, her expression is one of intense concentration on the game, and she is seen blowing a bubble with chewing gum.",
         "short_caption": "A young woman with long hair, wearing a black top and bracelets, plays a retro video game in a dimly lit room with a classic green Nintendo 64 controller.",
+        "middle_caption": "In a dimly lit, atmospheric indoor setting, a young woman with long hair is deeply engaged in playing a retro video game, holding a classic green Nintendo 64 controller. She wears a black long-sleeved top, blue jeans, and multiple bracelets, her expression focused and absorbed. The scene features close-up and medium shots, with a shallow depth of field emphasizing her and the controller against a softly blurred background. The warm and cool lighting creates a moody, nostalgic ambiance, capturing a quiet, personal moment of leisure and concentration.",
         "long_caption": "In a dimly lit, intimate indoor environment, a young woman with long, light brown hair and a light skin tone is depicted in a state of focused engagement while playing a retro video game. She is dressed in a black long-sleeved top, blue jeans, and wears several bracelets on her wrists, her hands gripping a classic green Nintendo 64 controller. The video features close-up and medium shots, with a shallow depth of field that keeps the background softly blurred, drawing attention to her and the controller. The lighting is low-key and atmospheric, combining warm yellow tones on her face with cool blue hues in the background, enhancing the nostalgic and moody ambiance. The overall composition emphasizes a personal, quiet moment of leisure, centered on the tactile and immersive experience of retro gaming. The scene conveys a sense of calm introspection and emotional connection to the activity, grounded in the stable visual elements of her appearance, attire, and the gaming environment."
       },
       "events": [
@@ -481,14 +526,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "game controller",
+          "has_cooking": false,
           "camera_motion_desc": "The camera tilts up slightly, following the person's hands on the controller.",
           "camera_motion_label": "tilt-up",
           "vbench_scores": {
@@ -498,7 +541,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9932896509804732,
             "imaging_quality": 0.5254178398533871,
             "aesthetic_quality": 0.5244520902633667
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -510,14 +556,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": true,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "chewing gum",
+          "has_cooking": false,
           "camera_motion_desc": "The camera tilts up from the woman's hands holding a controller to her face.",
           "camera_motion_label": "tilt-up",
           "vbench_scores": {
@@ -527,7 +571,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9950926381745353,
             "imaging_quality": 0.5163164920376656,
             "aesthetic_quality": 0.5241920948028564
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
@@ -539,14 +586,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": false,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": false,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "chewing gum",
+          "has_cooking": false,
           "camera_motion_desc": "",
           "camera_motion_label": "",
           "vbench_scores": {
@@ -556,9 +601,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9945615468015588,
             "imaging_quality": 0.6123333544344516,
             "aesthetic_quality": 0.5154242515563965
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.8016600072837148,
+        "background_consistency": 0.8762541216135932,
+        "temporal_flickering": 0.9862860205420034,
+        "motion_smoothness": 0.9945769178406184,
+        "imaging_quality": 0.5503823109106584,
+        "aesthetic_quality": 0.5276792208353679
+      }
     },
     {
       "uuid": "1c88e6a5-4b7e-4ebe-aa3f-cfd5cf3a4d60",
@@ -572,8 +628,8 @@ window.MEV_SHOWCASE_METADATA = {
         "lighting": "The scene is evenly lit with bright, soft light, likely from a combination of ceiling fixtures and ambient room light. The lighting is clean and creates a warm, inviting feel without harsh shadows.",
         "atmosphere": "The atmosphere is joyful, lighthearted, and affectionate. The interaction between the couple, characterized by smiles and laughter, creates a warm and romantic mood.",
         "subject_profile": "A man and a woman are the subjects of the video. The man is an adult with a dark skin tone, dreadlocks, and a nose ring, wearing a black t-shirt and jeans. The woman, seen mostly from the side or over-the-shoulder, is an adult with a medium skin tone and dark, curly hair, wearing a grey tank top.",
-        "middle_caption": "In a bright, modern kitchen with white cabinetry, a stainless steel refrigerator, and a built-in stovetop, a man with dark skin, dreadlocks, and a nose ring stands at the stove holding a glass of red wine, wearing a black t-shirt and jeans. His partner, a woman with medium skin tone and dark curly hair, is seen mostly from the side and over her shoulder, wearing a grey tank top. The scene captures a warm, affectionate, and playful atmosphere as they engage in a shared domestic activity, with the camera maintaining a steady, intimate perspective that emphasizes their connection and the vibrant red of the strawberry and wine against the neutral tones of the space. The camera first pans right across the kitchen counter, then tilts up to reveal the man cooking at the stove.",
         "short_caption": "A man with dreadlocks and a nose ring, wearing a black t-shirt and jeans, stands in a modern kitchen with his partner, who has dark curly hair and wears a grey tank top, as they share a lighthearted moment while cooking and drinking red wine.",
+        "middle_caption": "In a bright, modern kitchen with white cabinetry, a stainless steel refrigerator, and a built-in stovetop, a man with dark skin, dreadlocks, and a nose ring stands at the stove holding a glass of red wine, wearing a black t-shirt and jeans. His partner, a woman with medium skin tone and dark curly hair, is seen mostly from the side and over her shoulder, wearing a grey tank top. The scene captures a warm, affectionate, and playful atmosphere as they engage in a shared domestic activity, with the camera maintaining a steady, intimate perspective that emphasizes their connection and the vibrant red of the strawberry and wine against the neutral tones of the space. The camera first pans right across the kitchen counter, then tilts up to reveal the man cooking at the stove.",
         "long_caption": "In a bright, modern kitchen featuring clean white cabinetry, a stainless steel refrigerator, and a built-in stovetop, a man with dark skin, dreadlocks, and a nose ring stands at the stove, wearing a black t-shirt and jeans while holding a glass of red wine. His partner, a woman with medium skin tone and dark curly hair, is seen mostly from the side and over her shoulder, wearing a grey tank top. The kitchen is tidy and uncluttered, with a white countertop and a light gray accent wall contributing to its contemporary aesthetic. The scene is evenly lit with soft, bright light that enhances the warm, inviting atmosphere. The camera maintains a steady, intimate perspective, beginning near the kitchen counter and cutting board before panning right and tilting up to reveal the couple in their shared domestic space. Their interaction is natural and affectionate, capturing a candid moment of romance and lighthearted connection as they cook together. The camera motion first establishes the countertop activity, then shifts upward to reveal the man at the stove, emphasizing the vibrant red of the strawberry and wine against the neutral tones of the environment. The overall theme is one of domestic joy and playful intimacy, with the continuous camera movement reinforcing the sense of continuity and warmth throughout the video."
       },
       "events": [
@@ -587,16 +643,14 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": true,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "pot",
+          "has_cooking": true,
           "camera_motion_desc": "The camera pans right from the counter and then tilts up, revealing the man at the stove.",
-          "camera_motion_label": "pan-right + tilt-up",
+          "camera_motion_label": "pan-right, tilt-up",
           "vbench_scores": {
             "subject_consistency": 0.7831097503845719,
             "background_consistency": 0.8648246677442529,
@@ -604,7 +658,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9950930270162005,
             "imaging_quality": 0.576446437402205,
             "aesthetic_quality": 0.4012121856212616
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -616,14 +673,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": true,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "pan",
+          "has_cooking": true,
           "camera_motion_desc": "The camera slowly dollies out and trucks slightly right, revealing a man cooking at the stove.",
           "camera_motion_label": "dolly-out",
           "vbench_scores": {
@@ -633,7 +688,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9951987647154379,
             "imaging_quality": 0.741669647216797,
             "aesthetic_quality": 0.48519444465637207
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
@@ -645,14 +703,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "pan",
+          "has_cooking": true,
           "camera_motion_desc": "The camera slowly dollies out and trucks slightly to the right.",
           "camera_motion_label": "dolly-out",
           "vbench_scores": {
@@ -662,7 +718,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9956925687367821,
             "imaging_quality": 0.7307956040145567,
             "aesthetic_quality": 0.5343428254127502
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 4,
@@ -674,14 +733,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": true,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": true,
-          "focus_object": "cherry tomato",
+          "has_cooking": true,
           "camera_motion_desc": "The camera slowly dollies out and trucks slightly to the right, revealing more of the kitchen scene.",
           "camera_motion_label": "dolly-out",
           "vbench_scores": {
@@ -691,9 +748,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9953281585510861,
             "imaging_quality": 0.7137657694436289,
             "aesthetic_quality": 0.46500086784362793
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.7116610207223675,
+        "background_consistency": 0.8194048974943052,
+        "temporal_flickering": 0.9815891879150859,
+        "motion_smoothness": 0.9954615697916978,
+        "imaging_quality": 0.6945389021093195,
+        "aesthetic_quality": 0.48748366962779655
+      }
     },
     {
       "uuid": "24d1d95d-5ada-4035-817e-6787abc06ef6",
@@ -703,13 +771,13 @@ window.MEV_SHOWCASE_METADATA = {
         "theme": "The video captures a quiet, intimate moment of domestic life and affection. It transitions from a scene of solitude to one of shared intimacy, highlighting a tender connection between two people.",
         "style": "The style is naturalistic and observational, reminiscent of a scene from an indie film or a slice-of-life documentary. It has a warm, slightly rustic aesthetic.",
         "shot_type": "The video is composed of a single medium wide shot that gradually moves closer to the subjects. It frames the central action at the table while also showing the surrounding kitchen environment.",
-        "camera_movement": "The camera maintains a slow dolly-in motion across the events, gradually moving closer to the seated woman and the person approaching her in the kitchen.",
+        "camera_movement": "The camera maintains a slow dolly-in motion, gradually moving closer to the seated woman and the person approaching her in the kitchen.",
         "lighting": "The lighting is soft and natural, primarily coming from an off-camera source to the left, likely a window or an open door. This creates a gentle, warm illumination on the subjects and the room.",
         "atmosphere": "The atmosphere begins as calm and contemplative, then shifts to become warm, tender, and affectionate with the arrival and interaction of the second person.",
         "subject_profile": "A woman is the primary subject, and a second person appears shortly after the video begins. The first subject is a young adult woman with long, dark hair and light skin, wearing a white t-shirt while sitting at a table. The second subject, who enters from the left, is a young adult with short dark hair, light skin, and a tattoo on their left arm, wearing a tan t-shirt and black pants.",
-        "middle_caption": "In a naturally lit, rustic kitchen with light wood cabinets and a tiled floor, a woman with long dark hair and light skin sits alone at a wooden dining table, sipping from a mug. The camera maintains a continuous medium wide shot while slowly dollying in, capturing the kitchen space, including a white gas stove, stainless steel sink, refrigerator, and shelves with jars and kitchen items, before gradually moving closer to the interaction. A second person with short dark hair, light skin, and a visible tattoo on their left arm, wearing a tan t-shirt and black pants, enters from the left and approaches the seated woman. The overall atmosphere is warm and intimate, grounded in domestic realism, with the slow dolly-in emphasizing the growing closeness between the two people.",
         "short_caption": "A woman with long dark hair sits at a wooden table in a rustic kitchen as another person with short dark hair approaches and shares an affectionate moment with her.",
-        "long_caption": "In a modest, sunlit kitchen with light wood cabinets, a tiled floor, and natural light streaming in from a doorway on the left, a young woman with long dark hair and light skin sits at a wooden dining table, sipping from a mug. The room features a white gas stove, stainless steel sink, refrigerator, and shelves holding jars and kitchen items, initially framed in a medium wide shot that shows the full kitchen space. A second person with short dark hair, light skin, and a visible tattoo on their left arm, wearing a tan t-shirt and black pants, enters from the left and approaches the seated woman. Across the events, the camera slowly dollies in, gradually tightening the view from the broader kitchen setting toward the two people at the table. The overall atmosphere is warm and intimate, emphasizing a quiet, affectionate connection between the two individuals within the context of domestic life. The consistent dolly-in supports this emotional progression by drawing attention closer to the interaction without changing the naturalistic style of the scene."
+        "middle_caption": "In a naturally lit, rustic kitchen with light wood cabinets and a tiled floor, a woman with long dark hair and light skin sits alone at a wooden dining table, sipping from a mug. The camera maintains a continuous medium wide shot while slowly dollying in, capturing the kitchen space, including a white gas stove, stainless steel sink, refrigerator, and shelves with jars and kitchen items, before gradually moving closer to the interaction. A second person with short dark hair, light skin, and a visible tattoo on their left arm, wearing a tan t-shirt and black pants, enters from the left and approaches the seated woman. The overall atmosphere is warm and intimate, grounded in domestic realism, with the slow dolly-in emphasizing the growing closeness between the two people.",
+        "long_caption": "In a modest, sunlit kitchen with light wood cabinets, a tiled floor, and natural light streaming in from a doorway on the left, a young woman with long dark hair and light skin sits at a wooden dining table, sipping from a mug. The room features a white gas stove, stainless steel sink, refrigerator, and shelves holding jars and kitchen items, initially framed in a medium wide shot that shows the full kitchen space. A second person with short dark hair, light skin, and a visible tattoo on their left arm, wearing a tan t-shirt and black pants, enters from the left and approaches the seated woman. The camera slowly dollies in, gradually tightening the view from the broader kitchen setting toward the two people at the table. The overall atmosphere is warm and intimate, emphasizing a quiet, affectionate connection between the two individuals within the context of domestic life. The consistent dolly-in supports this emotional progression by drawing attention closer to the interaction without changing the naturalistic style of the scene."
       },
       "events": [
         {
@@ -722,14 +790,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "mug",
+          "has_cooking": false,
           "camera_motion_desc": "The camera slowly dollies in while the seated woman stirs her drink.",
           "camera_motion_label": "dolly-in",
           "vbench_scores": {
@@ -739,26 +805,27 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9964925052602058,
             "imaging_quality": 0.77988690800137,
             "aesthetic_quality": 0.5496979355812073
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
           "start_time": 1.207,
           "end_time": 3.392,
           "duration": 2.1849999999999996,
-          "caption": "the woman with short dark hair, wearing a tan t-shirt, walks into the kitchen where the woman is drinking from a mug.",
+          "caption": "The woman with short dark hair, wearing a tan t-shirt, walks into the kitchen where the woman is drinking from a mug.",
           "filename": "24d1d95d-5ada-4035-817e-6787abc06ef6-00.00.01.207-00.00.03.392-seg2.mp4",
           "has_appearance": true,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "mug",
+          "has_cooking": false,
           "camera_motion_desc": "The camera continues to dolly in as the second person enters the kitchen.",
           "camera_motion_label": "dolly-in",
           "vbench_scores": {
@@ -768,26 +835,27 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9956246928418804,
             "imaging_quality": 0.7763077690765148,
             "aesthetic_quality": 0.5340398550033569
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
           "start_time": 3.392,
           "end_time": 6.994,
           "duration": 3.602,
-          "caption": "the woman with short dark hair walks over to the woman sitting at the kitchen table and leans in close to her.",
+          "caption": "The woman with short dark hair walks over to the woman sitting at the kitchen table and leans in close to her.",
           "filename": "24d1d95d-5ada-4035-817e-6787abc06ef6-00.00.03.392-00.00.06.994-seg3.mp4",
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "",
+          "has_cooking": false,
           "camera_motion_desc": "The camera slowly dollies in toward the two people as the standing person approaches the seated woman.",
           "camera_motion_label": "dolly-in",
           "vbench_scores": {
@@ -797,26 +865,27 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9951709941524095,
             "imaging_quality": 0.78237574506689,
             "aesthetic_quality": 0.474980890750885
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 4,
           "start_time": 6.994,
           "end_time": 10.06,
           "duration": 3.0660000000000007,
-          "caption": "the woman with short dark hair, standing behind the seated woman, leans over and kisses her on the cheek.",
+          "caption": "The woman with short dark hair, standing behind the seated woman, leans over and kisses her on the cheek.",
           "filename": "24d1d95d-5ada-4035-817e-6787abc06ef6-00.00.06.994-00.00.10.060-seg4.mp4",
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": true,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "",
+          "has_cooking": false,
           "camera_motion_desc": "The camera continues its slow dolly-in as the standing person leans in to kiss the seated woman.",
           "camera_motion_label": "dolly-in",
           "vbench_scores": {
@@ -826,9 +895,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9962297579176792,
             "imaging_quality": 0.7880676920517631,
             "aesthetic_quality": 0.49571603536605835
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.9501774086805673,
+        "background_consistency": 0.933382864410299,
+        "temporal_flickering": 0.9945104963109203,
+        "motion_smoothness": 0.9960549679739467,
+        "imaging_quality": 0.7820614493703764,
+        "aesthetic_quality": 0.5101204766167535
+      }
     },
     {
       "uuid": "7bee8477-87ab-4604-8b74-309432a8c35b",
@@ -838,7 +918,7 @@ window.MEV_SHOWCASE_METADATA = {
         "theme": "The video portrays a romantic and sweet moment, possibly a date or a pleasant meeting between two young people. The charming, pink-themed environment enhances the feeling of a special, intimate occasion.",
         "style": "The style is soft, romantic, and aesthetically pleasing, with a clean and modern feel. It has a whimsical quality, largely due to the color scheme and the presence of the giant teddy bear.",
         "shot_type": "The video primarily uses a medium close-up shot, focusing on the subjects from the chest up. This framing creates an intimate feel, drawing attention to their expressions.",
-        "camera_movement": "The camera maintains a truck-right motion across the events, beginning on the woman and revealing the man seated across from her.",
+        "camera_movement": "The camera maintains a truck-right motion, beginning on the woman and revealing the man seated across from her.",
         "lighting": "The lighting is soft, even, and diffused, creating a warm and flattering glow on the subjects. There are no harsh shadows, which contributes to the gentle and romantic atmosphere of the scene.",
         "atmosphere": "The atmosphere is calm, romantic, and sweet. The combination of the pink decor, soft lighting, and the subjects' gentle smiles evokes a feeling of warmth, happiness, and intimacy.",
         "subject_profile": "A woman is the primary subject initially, and a man appears later in the video. A large teddy bear is a prominent background object. The first subject is a young woman with long, wavy, dark brown hair and a light-to-medium skin tone, wearing a light pink ruffled top, a necklace, and several rings. Appearing from 00:13, the second subject is a young man with wavy, light brown hair and a light skin tone, who is smiling warmly while wearing a white shirt under a patterned jacket. The third prominent subject is a large, light-colored teddy bear, an inanimate object that serves as a key piece of the background decor throughout the video.",
@@ -857,14 +937,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": false,
-          "has_focus_shift": null,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "mug",
+          "has_cooking": false,
           "camera_motion_desc": "The camera slowly begins to pan to the right, revealing more of the background.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -874,7 +952,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9956565458865838,
             "imaging_quality": 0.7503785678796601,
             "aesthetic_quality": 0.5603973269462585
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 2,
@@ -886,14 +967,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": false,
           "has_disappearance": false,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": false,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "woman",
+          "has_cooking": false,
           "camera_motion_desc": "The camera slowly begins to truck to the right, revealing more of the background.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -903,7 +982,10 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.9951339223503793,
             "imaging_quality": 0.7297256104683763,
             "aesthetic_quality": 0.5144652128219604
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         },
         {
           "event_id": 3,
@@ -915,14 +997,12 @@ window.MEV_SHOWCASE_METADATA = {
           "has_appearance": true,
           "has_disappearance": true,
           "has_camera_motion": true,
-          "has_focus_shift": false,
+          "focus_shift": null,
           "is_multi_person": true,
           "has_environmental_change": true,
-          "has_occlusion": false,
           "has_lighting_change": false,
           "has_animal": false,
-          "is_cooking": false,
-          "focus_object": "man",
+          "has_cooking": false,
           "camera_motion_desc": "The camera trucks to the right, revealing a man sitting opposite the woman.",
           "camera_motion_label": "truck-right",
           "vbench_scores": {
@@ -932,9 +1012,20 @@ window.MEV_SHOWCASE_METADATA = {
             "motion_smoothness": 0.995932390922547,
             "imaging_quality": 0.688421796092671,
             "aesthetic_quality": 0.611717939376831
-          }
+          },
+          "has_sports": false,
+          "has_travel": false,
+          "has_child": false
         }
-      ]
+      ],
+      "vbench_scores": {
+        "subject_consistency": 0.926187469887092,
+        "background_consistency": 0.8886839178110987,
+        "temporal_flickering": 0.9866512290680721,
+        "motion_smoothness": 0.9956163442058698,
+        "imaging_quality": 0.7163017109096451,
+        "aesthetic_quality": 0.5657171808366541
+      }
     }
   ]
 };
