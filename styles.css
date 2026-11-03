@@ -709,6 +709,7 @@ h1 {
 
 .table-card {
   min-width: 0;
+  align-self: start;
 }
 
 .summary-table,
