@@ -709,7 +709,6 @@ h1 {
 
 .table-card {
   min-width: 0;
-  align-self: start;
 }
 
 .summary-table,
@@ -798,6 +797,15 @@ h1 {
 
 .schema-card pre {
   flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+
+@media (min-width: 1101px) {
+  .annotation-layout > .schema-card {
+    contain: size;
+    min-height: 0;
+  }
 }
 
 .figure-grid,
