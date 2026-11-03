@@ -708,7 +708,7 @@ h1 {
 }
 
 .table-card {
-  display: flex;
+  min-width: 0;
 }
 
 .summary-table,
@@ -718,8 +718,24 @@ h1 {
 }
 
 .summary-table {
-  height: 100%;
   table-layout: fixed;
+}
+
+.summary-table th:first-child {
+  width: 24%;
+}
+
+.summary-table th:nth-child(2) {
+  width: 44%;
+}
+
+.summary-table th:last-child {
+  width: 32%;
+}
+
+.summary-table th,
+.summary-table td {
+  overflow-wrap: anywhere;
 }
 
 .summary-table th,
@@ -749,10 +765,6 @@ h1 {
 .summary-table tbody tr:last-child td,
 .metrics-table tbody tr:last-child td {
   border-bottom: none;
-}
-
-.summary-table tbody tr {
-  height: 20%;
 }
 
 .schema-card {
