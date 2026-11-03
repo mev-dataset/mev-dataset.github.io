@@ -359,7 +359,7 @@ function createQualityScores(eventMetadata = {}) {
 
 function getCameraMotionLabel(eventMetadata = {}) {
   const label = String(eventMetadata.camera_motion_label || "").trim();
-  return label || (eventMetadata.has_camera_motion ? "Not specified" : "static");
+  return label || "static";
 }
 
 function getCameraMotionDescription(eventMetadata = {}) {
@@ -367,9 +367,9 @@ function getCameraMotionDescription(eventMetadata = {}) {
     return eventMetadata.camera_motion_desc;
   }
 
-  return eventMetadata.has_camera_motion
-    ? "Camera motion is annotated for this event; detailed description is unavailable."
-    : "No camera motion is annotated for this event.";
+  return getCameraMotionLabel(eventMetadata) === "static"
+    ? "The camera remains static during this event."
+    : "Camera motion is annotated for this event; detailed description is unavailable.";
 }
 
 function createEventMetadata(sequence, videoMetadata) {
